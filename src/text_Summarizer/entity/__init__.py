@@ -10,3 +10,9 @@ class DataIngestionConfig:
         self.source_url = source_url
         self.local_data_file = local_data_file
         self.unzip_dir = unzip_dir
+
+class DataTransformationConfig:
+    def __init__(self, root_dir, data_path,tokenizer_name):
+        self.root_dir = root_dir
+        self.data_path = data_path
+        self.tokenizer_name = tokenizer_name
